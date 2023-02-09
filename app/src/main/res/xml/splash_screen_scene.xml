@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1644"
+        motion:motionInterpolator="cubic(0.23,0.21,0.71,0.67)"
+        motion:autoTransition="animateToEnd">
+       <KeyFrameSet>
+           <KeyAttribute
+               motion:motionTarget="@+id/textView6"
+               motion:framePosition="0"
+               android:scaleX="0" />
+           <KeyAttribute
+               motion:motionTarget="@+id/textView6"
+               motion:framePosition="0"
+               android:scaleY="0" />
+           <KeyAttribute
+               motion:motionTarget="@+id/textView6"
+               motion:framePosition="100"
+               android:scaleX="1.2" />
+           <KeyAttribute
+               motion:motionTarget="@+id/textView6"
+               motion:framePosition="100"
+               android:scaleY="1.2" />
+       </KeyFrameSet>
+        <OnSwipe motion:springDamping="0.0"
+            motion:maxAcceleration="1.66" />
+    </Transition>
+
+    <ConstraintSet>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+    </ConstraintSet>
+</MotionScene>

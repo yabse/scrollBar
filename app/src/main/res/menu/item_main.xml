@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:title = "@string/home"
+            android:id="@+id/navhome"
+            android:icon="@drawable/comt"/>
+        <item
+            android:title="@string/log_in"
+            android:id="@+id/navChart"
+            android:icon="@drawable/ic_baseline_bar_chart_24"/>
+        <item
+            android:title="@string/contact"
+            android:icon="@drawable/ic_baseline_notes_24"
+            android:id="@+id/navPaper"/>
+        <item
+            android:title="@string/profile"
+            android:icon="@drawable/ic_baseline_person_24"
+            android:id="@+id/navprofile"/>
+
+</menu>

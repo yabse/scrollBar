@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="73dp"
+        android:text="Get started"
+        android:textSize="24dp"
+        android:textColor="@color/purple_gridient"
+        android:fontFamily="@font/poppins_bold"
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="100dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="88dp"
+        android:textSize="12dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="become a member of  our platform"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="110dp" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="37dp"
+        android:text="Email"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_semibold"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="392dp" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="312dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:background="@drawable/input"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="443dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="26dp"
+        android:text="Password"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_semibold"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="522dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="312dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:background="@drawable/input"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="541dp" />
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_marginStart="59dp"
+        android:textSize="12dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Forget password?"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="110dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="239dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="35dp"
+        android:text="Log in"
+        android:background="@drawable/ingredient"
+        tools:layout_editor_absoluteX="190dp"
+        tools:layout_editor_absoluteY="615dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="71dp"
+        >
+        <View
+            android:layout_width="155dp"
+            android:layout_height="1dp"
+            android:background="@color/light_white"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log in with"
+            android:textColor="@color/light_white"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_white"
+            android:layout_marginTop="10dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="33dp"
+        >
+
+        <ImageButton
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:background="@drawable/google"
+            />
+        <ImageButton
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="84dp"
+
+            android:background="@drawable/facebook"
+            />
+        <ImageButton
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="79dp"
+            android:background="@drawable/applelogo"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="60dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="79dp"
+            android:text="Don’t have an account? " />
+        <Button
+            android:id="@+id/textButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:textSize="12dp"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
