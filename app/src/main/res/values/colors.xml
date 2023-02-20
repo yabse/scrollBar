@@ -19,6 +19,12 @@
     <color name="purple_gridient2">#A83B136F</color>
     <color name="logIn_back">#F4F4F4</color>
 
+    // Navigation colors
+    <color name="navigation_background">#FFFFFF</color>
+
+    // card p.number
+    <color name="card_phoneNumber">#858585</color>
+
 
 
 

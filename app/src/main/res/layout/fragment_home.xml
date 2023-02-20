@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".homeFragment">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -31,7 +31,7 @@
                     app:civ_border_width="2dp"
                     app:civ_border_color="@color/white"/>
                 <TextView
-                    android:layout_marginTop = "5dp"
+                    android:layout_marginTop = "10dp"
                     android:layout_marginStart = "79dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -41,13 +41,12 @@
                     android:textColor="@color/white"
                     />
 
-
             </LinearLayout>
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginTop = "31dp"
+                android:layout_marginTop = "30dp"
                 android:layout_marginLeft = "35dp"
                 >
                 <TextView
@@ -80,7 +79,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop = "17dp"
                         android:layout_marginStart = "34dp"
-                        android:layout_marginBottom = "59dp"
+                        android:layout_marginBottom = "50dp"
                         android:orientation="horizontal"
                         >
                         <LinearLayout
@@ -90,66 +89,85 @@
                             android:orientation="vertical"
                             >
                             <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginTop = "10dp"
+
+                                >
+                                <LinearLayout
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:orientation="vertical"
+                                    android:layout_marginStart = "19dp"
+                                    android:layout_marginTop = "10dp"
+                                    android:orientation="horizontal"
+
                                     >
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                                        android:id="@+id/profile_limage9"
+                                        android:layout_width="36dp"
+                                        android:layout_height="36dp"
+
+                                        android:src="@drawable/feres_logo"
+                                        />
                                     <LinearLayout
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginStart = "18.18dp"
-                                        android:layout_marginTop = "9dp"
-                                        android:orientation="horizontal"
-
+                                        android:orientation="vertical"
+                                        android:layout_marginStart = "10dp"
                                         >
-                                        <de.hdodenhof.circleimageview.CircleImageView
-                                            xmlns:app="http://schemas.android.com/apk/res-auto"
-                                            android:id="@+id/profile_limage9"
-                                            android:layout_width="36dp"
-                                            android:layout_height="36dp"
-
-                                            android:src="@drawable/feres_logo"
-                                            />
-                                        <LinearLayout
+                                        <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:orientation="vertical"
-                                            android:layout_marginStart = "10dp"
-                                            >
-                                            <TextView
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:fontStyle="@font/poppins_extrabold"
-                                                android:text="@string/Feres_Transportation"
-                                                android:textSize="11sp"
-                                                />
-                                            <TextView
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:text="@string/Feres_Transportation_link"
-                                                android:textSize="6sp"
-                                                />
-
-                                        </LinearLayout>
-
-                                        <ImageView
-                                            android:layout_width="20dp"
-                                            android:layout_height="20dp"
-                                            android:layout_marginStart = "126dp"
-                                            android:layout_marginTop ="4dp"
-                                            android:background ="@drawable/ic_baseline_more_vert_24"
+                                            android:fontFamily="@font/poppins_medium"
+                                            android:textColor="@color/black"
+                                            android:text="@string/Feres_Transportation"
+                                            android:textSize="11sp"
                                             />
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/Feres_Transportation_link"
+                                            android:textSize="10sp"
+                                            />
+
                                     </LinearLayout>
 
+                                    <ImageView
+
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:layout_marginStart = "100dp"
+                                        android:background ="@drawable/ic_baseline_more_vert_24"
+                                        />
                                 </LinearLayout>
+
+
+                            </LinearLayout>
+
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="1dp"
-                                android:layout_marginTop = "7dp"
-                                android:background ="@color/light_white" />
+                                android:layout_marginTop = "10dp"
+                                android:background ="@color/black" />
+
 
                         </LinearLayout>
-
+                        <LinearLayout
+                            android:layout_width="322dp"
+                            android:layout_height="195dp"
+                            android:layout_marginStart = "18dp"
+                            android:background="@drawable/chart_background"
+                            >
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="322dp"
+                            android:layout_height="195dp"
+                            android:layout_marginStart = "20dp"
+                            android:background="@drawable/chart_background"
+                            >
+                        </LinearLayout>
                     </LinearLayout>
                 </HorizontalScrollView>
             </LinearLayout>
@@ -161,13 +179,14 @@
             android:paddingLeft="17dp"
             >
             <TextView
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:textSize = "11sp"
-                android:paddingTop="6dp"
-                android:text="@string/Recent_operation"
+                android:id="@+id/recent_oper"
+                android:layout_width="101dp"
+                android:layout_height="30dp"
+                android:layout_marginTop = "6.8dp"
+                android:textSize="11sp"
                 android:textColor="@color/purple_gridient"
-                android:fontFamily="@font/poppins_regular"
+                android:gravity="top"
+                android:text="Recent operations"
                 />
             <LinearLayout
                 android:layout_width="match_parent"
@@ -175,14 +194,13 @@
                 android:orientation="vertical"
                 >
                 <TextView
-                    android:layout_width="60dp"
+                    android:layout_width="54.62dp"
                     android:layout_height="11dp"
-                    android:layout_marginTop = "17dp"
+                    android:layout_marginTop = "6.3dp"
                     android:textSize = "7sp"
                     android:textAlignment="center"
-                    android:text="@string/Today"
+                    android:text="Today"
                     android:textColor="@color/white"
-                    android:fontFamily="@font/poppins_light"
                     android:background="@drawable/home_small_rectangle"/>
 
                 <ScrollView
@@ -203,7 +221,7 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="61dp"
-                                android:padding="10dp"
+                                android:paddingTop="11dp"
                                 >
                                 <de.hdodenhof.circleimageview.CircleImageView
                                     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -211,27 +229,32 @@
                                     android:layout_width="36dp"
                                     android:layout_height="36dp"
                                     android:src="@drawable/rectangle324"
-                                    app:civ_border_color="#FF000000"/>
+                                    app:civ_border_color="#FF000000"
+                                    android:layout_marginEnd="0dp"
+
+                                    />
                                 <LinearLayout
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:orientation="vertical"
-                                    android:layout_marginStart="20dp"
-                                    android:layout_marginTop="5dp"
+                                    android:layout_marginStart="11dp"
+                                    android:layout_marginTop="1dp"
                                     >
                                     <TextView
-                                        android:layout_width="wrap_content"
+                                        android:layout_width="94.3dp"
                                         android:layout_height="wrap_content"
                                         android:text="@string/Yonas_Tesfaye"
+                                        android:textSize="13sp"
                                         android:textColor="@color/black"
-                                        android:fontFamily="@font/poppins_regular"
+                                        android:fontFamily="@font/poppins_light"
                                         />
                                     <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
+                                        android:layout_width="74dp"
+                                        android:layout_height="14dp"
                                         android:text="@string/Yonas_Tesfaye_num"
                                         android:textSize="8sp"
-                                        android:layout_marginStart="10dp"
+                                        android:gravity="right|top"
+                                        android:color="@color/card_phoneNumber"
                                         android:fontFamily="@font/poppins_light"
                                         />
                                 </LinearLayout>
@@ -239,13 +262,12 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:orientation="vertical"
-                                    android:layout_marginStart="90dp"
+                                    android:layout_marginStart="139.8dp"
                                     >
                                     <LinearLayout
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="3dp"
-                                        android:layout_marginStart="40dp"
                                         >
                                         <ImageView
                                             android:layout_width="15dp"
@@ -268,9 +290,11 @@
                                         />
                                     </LinearLayout>
                                     <LinearLayout
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginStart="80dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="right"
+                                        android:layout_marginTop="2dp"
+
                                         >
                                         <TextView
                                             android:layout_width="wrap_content"
@@ -303,7 +327,7 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="61dp"
-                                android:padding="10dp"
+                                android:paddingTop="11dp"
                                 >
                                 <de.hdodenhof.circleimageview.CircleImageView
                                     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -316,22 +340,24 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:orientation="vertical"
-                                    android:layout_marginStart="20dp"
-                                    android:layout_marginTop="5dp"
+                                    android:layout_marginStart="11dp"
+                                    android:layout_marginTop="1dp"
                                     >
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:text="@string/Miheret_Belay"
                                         android:textColor="@color/black"
-                                        android:fontFamily="@font/poppins_regular"
+                                        android:textSize="13sp"
+                                        android:fontFamily="@font/poppins_light"
                                         />
                                     <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
+                                        android:layout_width="74dp"
+                                        android:layout_height="14dp"
                                         android:text="@string/Miheret_Belay_num"
                                         android:textSize="8sp"
-                                        android:layout_marginStart="10dp"
+                                        android:gravity="right|top"
+                                        android:color="@color/card_phoneNumber"
                                         android:fontFamily="@font/poppins_light"
                                         />
                                 </LinearLayout>
@@ -339,13 +365,13 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:orientation="vertical"
-                                    android:layout_marginStart="90dp"
+                                    android:layout_marginStart="139.8dp"
                                     >
                                     <LinearLayout
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="3dp"
-                                        android:layout_marginStart="50dp"
+
                                         >
                                         <ImageView
                                             android:layout_width="15dp"
@@ -508,16 +534,19 @@
                 android:orientation="vertical"
                 >
                 <TextView
-                    android:layout_width="60dp"
+                    android:layout_width="54.62dp"
                     android:layout_height="11dp"
-                    android:layout_marginTop = "20dp"
-                    android:textSize = "10sp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop = "21dp"
+                    android:textSize = "7sp"
                     android:textAlignment="center"
+                    android:textColor="@color/white"
                     android:text="@string/Yesterday"
                     android:background="@drawable/home_small_rectangle"/>
                 <ScrollView
                     android:layout_width="match_parent"
                     android:layout_height="124dp"
+                    android:layout_marginTop = "6dp"
                     android:background="#EEEEEE"
                     >
                     <LinearLayout
@@ -533,7 +562,7 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="61dp"
-                                android:padding="10dp"
+                                android:paddingTop="13dp"
                                 >
                                 <de.hdodenhof.circleimageview.CircleImageView
                                     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -546,22 +575,24 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:orientation="vertical"
-                                    android:layout_marginStart="20dp"
-                                    android:layout_marginTop="5dp"
+                                    android:layout_marginStart="11dp"
+                                    android:layout_marginTop="1dp"
                                     >
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:text="@string/Soliana_abrha"
                                         android:textColor="@color/black"
-                                        android:fontFamily="@font/poppins_regular"
+                                        android:textSize="13sp"
+                                        android:fontFamily="@font/poppins_light"
                                         />
                                     <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
+                                        android:layout_width="74dp"
+                                        android:layout_height="14dp"
                                         android:text="@string/Soliana_abrha_p_num"
                                         android:textSize="8sp"
-                                        android:layout_marginStart="10dp"
+                                        android:gravity="right|top"
+                                        android:color="@color/card_phoneNumber"
                                         android:fontFamily="@font/poppins_light"
                                         />
                                 </LinearLayout>
@@ -633,7 +664,7 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="61dp"
-                                android:padding="10dp"
+                                android:paddingTop="13dp"
                                 >
                                 <de.hdodenhof.circleimageview.CircleImageView
                                     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -646,22 +677,24 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:orientation="vertical"
-                                    android:layout_marginStart="20dp"
-                                    android:layout_marginTop="5dp"
+                                    android:layout_marginStart="11dp"
+                                    android:layout_marginTop="1dp"
                                     >
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:text="@string/Yonas_Tesfaye"
                                         android:textColor="@color/black"
-                                        android:fontFamily="@font/poppins_regular"
+                                        android:textSize="13sp"
+                                        android:fontFamily="@font/poppins_light"
                                         />
                                     <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
+                                        android:layout_width="74dp"
+                                        android:layout_height="14dp"
                                         android:text="@string/Yonas_Tesfaye_num"
                                         android:textSize="8sp"
-                                        android:layout_marginStart="10dp"
+                                        android:gravity="right|top"
+                                        android:color="@color/card_phoneNumber"
                                         android:fontFamily="@font/poppins_light"
                                         />
                                 </LinearLayout>
