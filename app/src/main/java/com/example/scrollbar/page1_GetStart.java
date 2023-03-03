@@ -6,8 +6,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class page1_GetStart extends AppCompatActivity {
+    TextView sign_up_textView;
     Button button;
 
     @Override
@@ -15,8 +17,18 @@ public class page1_GetStart extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.page1_get_start);
 
-        button = findViewById(R.id.button_signUp);
+        button = findViewById(R.id.button_logIn1);
         button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(page1_GetStart.this, MainActivity_navigation.class);
+                startActivity(intent);
+
+            }
+        });
+
+        sign_up_textView = findViewById(R.id.button_signUp);
+        sign_up_textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(page1_GetStart.this, page_2_Welcome.class);

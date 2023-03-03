@@ -51,8 +51,11 @@
         android:layout_width="312dp"
         android:layout_height="51dp"
         android:layout_marginStart="39dp"
+        android:paddingStart="16dp"
         android:layout_marginTop="10dp"
         android:ems="10"
+        android:textSize="24dp"
+        android:fontFamily="@font/poppins_regular"
         android:background="@drawable/input"
         android:inputType="textEmailAddress"
         tools:layout_editor_absoluteX="73dp"
@@ -78,6 +81,9 @@
         android:layout_marginStart="39dp"
         android:layout_marginTop="10dp"
         android:ems="10"
+        android:paddingStart="16dp"
+        android:textSize="24dp"
+        android:fontFamily="@font/poppins_regular"
         android:background="@drawable/input"
         android:inputType="textPassword"
         tools:layout_editor_absoluteX="73dp"
@@ -97,6 +103,7 @@
         tools:layout_editor_absoluteY="522dp" />
 
     <Button
+        android:id="@+id/button_logIn1"
         android:layout_width="239dp"
         android:layout_height="55dp"
         android:layout_marginStart="76dp"
@@ -169,14 +176,18 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginStart="79dp"
+            android:textSize="12dp"
+            android:fontFamily="@font/poppins_medium"
             android:text="Don’t have an account? " />
-        <Button
+        <TextView
             android:id="@+id/button_signUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
             android:text="Sign up"
             android:textSize="12dp"
-            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:textColor="@color/purple_gridient"
+            android:layout_marginStart="5dp"
             />
 
 
